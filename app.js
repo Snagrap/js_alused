@@ -1,37 +1,44 @@
-// Muutujad
-// var,let, const
-// var == let OMG OMGO MOGM OGMO MGOMO GMOMG
-// var == 0 :((((())))) let == 1 BURH URHUBUR
-// CONST Am,ognus
+// Andmetüübid
 
-//deklareerimine
-//let name = "Karl Karilaid";
-// KAsutamine
-//console.log(name);
-//name = "mATI KAIRLAID";
-//console.log(name);
+// Primitiivid
+// String - sõne, tekst
+const name = "Karl";
+console.log(typeof name);
 
-// lubatud kõik märgid nime loomisel - tähed, numbrid, _, $
-// numbriga ei saa
-//let $="dollar";
-//console.log($);
+// Number
+const age = 17;
+console.log(typeof age);
 
-const name = "Karl Karilaid";
-console.log(name);
+const percent = 50.3;
+console.log(typeof percent);
 
-// const ei luba väärtust muuta bruh buruhbu
-//name = "Mati Karilaid"
+// Boolean - true v false
+const  hasKids = false
+console.log(typeof hasKids);
 
-const numbers = [1,2,3,4,5,6,7,8,9];
-numbers.push(0);
-console.log(numbers);
+// Null
+const airplane = null;
+console.log(typeof airplane);
+
+// Undefined
+let test;
+console.log(typeof test);
+
+// Symbol
+const sym = Symbol();
+console.log(typeof sym);
+
+// Objektid
+const hobbies = ["music", "gaming"];
+console.log(typeof hobbies);
 
 const person = {
-	name: "Kadi",
-	age: 568
+	name: "Kusel",
+	age: 2
 };
 
-person.name = "Kati";
-person.age = 569
+console.log(typeof person);
 
-console.log(person);
+// näiteks kuupäeva ojbejtk
+const today = new Date();
+console.log(typeof today);
