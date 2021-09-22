@@ -1,27 +1,38 @@
-const num1 = 100;
-const num2 = 50;
+const name = "LAbrn";
+const jalgpall = false;
+const sus_meeter = Math.round(Math.random()*1000);
+const age = "69";
+const gaming = "yes";
+const toreduse_meeter = "0";
 
-let result;
+let val;
+// concetanation
 
-//matemaatika
+val = name + " " + age;
 
-result = num1 + num2;
-result = num1 - num2;
-result = num1 * num2;
-result = num1 / num2;
-result = num1 % num2;
+// append
 
-// Math
+val = "karlos";
+val = val + " toreduse meeter = " + toreduse_meeter;
 
-result = Math.PI;
-result = Math.round(2.5);
-result = Math.ceil(2.3);
-result = Math.floor(2.8);
-result = Math.sqrt(64);
-result = Math.abs(-3);
-result = Math.pow(8, 2);
-result = Math.min(90, 190);
-result = Math.max(2020, 20034, 2401024, 123);
-result = Math.round(Math.random()*1000 + 1);
+val = sus_meeter;
 
-console.log(result);
+// escaping
+
+val = "See on \'jutumärkides\'";
+
+// suuruse muutmine
+
+val = age.toUpperCase();
+
+val = sus_meeter[0];
+
+val = name.indexOf("A");
+val = name.lastIndexOf("r");
+val = name.charAt(3);
+
+val = name.substring(0, 3);
+val = name.slice(0, 3);
+val = gaming.split();
+
+console.log(val);
