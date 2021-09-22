@@ -1,44 +1,27 @@
-// Andmetüübid
+const num1 = 100;
+const num2 = 50;
 
-// Primitiivid
-// String - sõne, tekst
-const name = "Karl";
-console.log(typeof name);
+let result;
 
-// Number
-const age = 17;
-console.log(typeof age);
+//matemaatika
 
-const percent = 50.3;
-console.log(typeof percent);
+result = num1 + num2;
+result = num1 - num2;
+result = num1 * num2;
+result = num1 / num2;
+result = num1 % num2;
 
-// Boolean - true v false
-const  hasKids = false
-console.log(typeof hasKids);
+// Math
 
-// Null
-const airplane = null;
-console.log(typeof airplane);
+result = Math.PI;
+result = Math.round(2.5);
+result = Math.ceil(2.3);
+result = Math.floor(2.8);
+result = Math.sqrt(64);
+result = Math.abs(-3);
+result = Math.pow(8, 2);
+result = Math.min(90, 190);
+result = Math.max(2020, 20034, 2401024, 123);
+result = Math.round(Math.random()*1000 + 1);
 
-// Undefined
-let test;
-console.log(typeof test);
-
-// Symbol
-const sym = Symbol();
-console.log(typeof sym);
-
-// Objektid
-const hobbies = ["music", "gaming"];
-console.log(typeof hobbies);
-
-const person = {
-	name: "Kusel",
-	age: 2
-};
-
-console.log(typeof person);
-
-// näiteks kuupäeva ojbejtk
-const today = new Date();
-console.log(typeof today);
+console.log(result);
