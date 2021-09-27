@@ -1,35 +1,27 @@
-const person = {
-	firstName: "Tarmo",
-	lastName: "Kruusimäe",
-	age: 56,
-	email: "tarmo.kruusimae.amogus@gmail.com",
-	hobbies: ["vaping", "vangis istumine", "poliitika"],
-	aadress: {
-		city: "Kehra",
-		county: "Anija vald",
-	},
-	getBirthYear: function() {
-		return 2021 - this.age;
-	}		
-};
-
 let val;
 
-val = person;
-val = person.firstName;
-val = person["lastName"];
-val = person.hobbies[0];
-val = person.aadress['city'];
-val = person.getBirthYear();
+const today = new Date();
 
-const people = [
-	{name: "Mati", age: 35},
-	{name: "Kadi", age: 32},
-	{name: "Amogus", age: 13}
- ];
+val = today.getMonth(); //0 on jaanuar
+val = today.getDate();
+val = today.getDay();
+val = today.getFullYear();
+val = today.getHours();
+val = today.getMinutes();
+val = today.getSeconds();
+val = today.getMilliseconds();
+val = today.getTime();
 
-for(let i = 0; i < people.length; i++){
-	console.log(people[i].name);
-}
+let birthday = new Date("4/10/2004 11:00:00");
+birthday = new Date("September 27 2001");
 
+birthday.setMonth(2); // jaanuar on 0 SAA ARU JUBA ISSANDJ UMALK
+birthday.setDate(12);
+birthday.setFullYear(2069);
+birthday.setHours(11);
+birthday.setMinutes(32);
+birthday.setSeconds(45);
+
+
+console.log(birthday);
 console.log(val);
