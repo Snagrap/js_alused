@@ -1,14 +1,17 @@
 let val;
-val=document;
-val=document.all;
-val=document.all.length;
-val=document.head;
-val=document.body;
-val=document.type;
-val=document.forms[0].method;
-val=document.forms[0].action;
-val=document.forms[0].id;
-val=document.links[0];
-val=document.scripts;
-//?????????????????????????????????????????????????????????????????
+val=document.getElementById("task-title");
+const taskTitle=document.getElementById("task-title");
+taskTitle.style.background = "#fffff";
+taskTitle.style.color = "#000000";
+taskTitle.style.padding = "5px";
+taskTitle.style.display = "1";
+//taskTitle.textContent = "MINU ÜLESANDED :)"
+//taskTitle.innerText = "tglt ei ole"
+taskTitle.innerHTML = '<span style="color:red";">Kusen</span>'
+val=document.querySelector("#task-title");
+val=document.querySelector(".card-title");
+val=document.querySelector("h2");
+document.querySelector('li').style.color="red";
+document.querySelector("ul li").style.color="yellow";
+document.querySelector("li:nth-child(even)").style.background="#ccc";
 console.log(val);
