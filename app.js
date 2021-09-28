@@ -1,57 +1,37 @@
-// for tsükkel
-
-console.log("For tsükkel");
-for(let i = 0; i < 10; i++) {
-	if(i==5) {
-		//break;
-		continue;
+//funktsioonid defineerimine (deklareerimine)
+function greeting(firstname="nimetu", lastname="härrasmees"){
+	/*if(typeof firstname==="undefined"){
+		firstname="Saksasus"
 	}
-	console.log(i);
+	if(typeof lastname==="undefined"){
+		lastname="Lembirt"
+	} */
+	return "tere "+firstname+" "+lastname;
 }
-
-//while tsükkel :D
-
-console.log("While tsükkel");
-let i=0;
-while(i<10){
-	console.log(i);
-	i++;
+//funktsioonid kutsumine tööle
+let greet=greeting("sussy", "baka");
+console.log(greet);
+const square=function(number=3){
+	return number*number;
 }
-
-//do while tsükkel :(
-
-console.log("Do while tsükkel");
-let j=0;
-do{
-	console.log(j);
-	j++;
-} while(j<10);
-
-//tsüklid ja massiivid
-console.log("Massivid ja tsüklid");
-//for tsükliga
-const cars=["Mersu","Bmw","Honda"];
-for(let i=0; i<cars.length; i++){
-	console.log(cars[i]);
+console.log(square());
+(function(){
+	console.log("Function is runningi nginginginin!!!!!")
+})();
+(function(name){
+	console.log("Function is running! "+"Tere "+name);
+})("Albert");
+const todo={
+	add:function(){
+		console.log("See on cringe fucntion mida ma ei hakka kuangi oma eluis kasutama))))");
+	},
+	edit:function(id){
+		console.log(`èdit todo nr ${id} ...`);
+	},
+	delete:function(){
+		console.log("delete todo...");
+	}
 }
-//forEach
-console.log("ForEach function");
-cars.forEach(function(element, index){
-	console.log(`cars[${index}] = ${element}`);
-});
-
-//forEach (sus editon)
-console.log("ForEach function, but sus.");
-cars.forEach((element, index) => {
-	console.log(`cars[${index}] = ${element}`);
-});
-console.log();
-//tsüklid ja objektid
-const crewmate={ 
-	color:"Blue",
-	impostor: false,
-	susMeter: 44
-};
-for(let key in crewmate){
-	console.log(`${key}=${crewmate[key]}`);
-}
+todo.add();
+todo.edit("karl karilaid");
+todo.delete();
