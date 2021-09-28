@@ -3,25 +3,47 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device, initial-scale=1.0">
-		<title>JS ALUSED</title>
+		<title>JS ALUSED - DOM</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	</head>
 	<body>
-		<h1>503 Service Unavailable</h1>
-		<h4>The server is temporarily unable to service your request due to maintenance downtime or capacity problems. Please try again later.</h4>
-
-		<p><img src="https://html-online.com/editor/tiny4_9_11/plugins/emoticons/img/smiley-surprised.gif" alt="surprised" /></p>
-
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><img src="me.gif">
-
-		<form id="frm1">
-		Lisa nimekirja: <input type="text" name="lisa">
-		<input type="button" onclick="amog()" value="Lisa">
-		</form> 
-		<h2>TO DO LIST:</h2>
-		<ul>
-			<li>Minecrafti mänkima</li>
-		</ul>
-
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>Karl Karilaid</h1>
+					<h4>JS - ALUSED - DOM</h4>
+					<img src="me.gif">
+						<div class="card">
+        				<div class="card-content">
+          				<span class="card-title">TO-DO ADDER V2.2</span>
+          				<div class="row">
+          					<form id="task-form" method="get">
+          						<div class="input-field col s12">
+          							<input type="text">
+          							<label for="">New task to do</label>
+        						</div>
+        						<input type="submit" value="Add task" class="btn">
+          					</form>
+          				</div>
+        			</div>
+        		<div class="card-action">
+          		<h4>TO DO:</h4>
+    			<ul class="collection">
+    				<li><a href="#" class="secondary-content">X</a></li>
+      				<li class="collection-item">Study JS</li>
+      				<li><a href="#" class="secondary-content">X</a></li>
+      				<li class="collection-item">Study HTML</li>
+      				<li><a href="#" class="secondary-content">X</a></li>
+      				<li class="collection-item">Go to take poopoo</li>
+      				<li><a href="#" class="secondary-content">X</a></li>
+      				<li class="collection-item">Play some roblox</li>
+    			</ul>
+        		</div>
+      			</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		<script src="app.js"></script>
 	</body>
 </html>
