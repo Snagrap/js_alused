@@ -1,17 +1,22 @@
 let val;
-val=document.querySelectorAll(`li`);
-const oddLi=document.querySelectorAll(`li:nth-child(odd)`);
-const evenLi=document.querySelectorAll(`li:nth-child(even)`);
-//document.querySelector(`li:nth-child(even)`).style.color="white";
-//document.querySelector(`li:nth-child(even)`).style.background="black";
 
-oddLi.forEach(function(li){
-	li.style.background = "#ff2222";
-});
-
-for(let i = 0; i < evenLi.length; i++){
-	evenLi[i].style.background = "#f22222";
-}
-
+const list=document.querySelector("ul");
+const listItem=document.querySelector("li:first-child");
+val=list;
+val=listItem;
+val=list.childNodes;
+val=list.childNodes[0];
+val=list.childNodes[0].nodeName;
+val=list.childNodes[0].nodeType;
+val=list.children;
+val=list.children[1];
+list.children[1].textContent = "Study XML";
+val=list.children[2].children;
+list.children[2].children[0].id="test-id";
+val=list.firstChild;
+val=list.firstElementChild;
+val=list.lastChild;
+val=list.lastElementChild;
+val=list.childElementCount;
+val=listItem.parentNode;
 console.log(val);
-
