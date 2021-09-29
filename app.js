@@ -1,17 +1,17 @@
 let val;
-val=document.getElementById("task-title");
-const taskTitle=document.getElementById("task-title");
-taskTitle.style.background = "#fffff";
-taskTitle.style.color = "#000000";
-taskTitle.style.padding = "5px";
-taskTitle.style.display = "1";
-//taskTitle.textContent = "MINU ÜLESANDED :)"
-//taskTitle.innerText = "tglt ei ole"
-taskTitle.innerHTML = '<span style="color:red";">Kusen</span>'
-val=document.querySelector("#task-title");
-val=document.querySelector(".card-title");
-val=document.querySelector("h2");
-document.querySelector('li').style.color="red";
-document.querySelector("ul li").style.color="yellow";
-document.querySelector("li:nth-child(even)").style.background="#ccc";
+val=document.querySelectorAll(`li`);
+const oddLi=document.querySelectorAll(`li:nth-child(odd)`);
+const evenLi=document.querySelectorAll(`li:nth-child(even)`);
+//document.querySelector(`li:nth-child(even)`).style.color="white";
+//document.querySelector(`li:nth-child(even)`).style.background="black";
+
+oddLi.forEach(function(li){
+	li.style.background = "#ff2222";
+});
+
+for(let i = 0; i < evenLi.length; i++){
+	evenLi[i].style.background = "#f22222";
+}
+
 console.log(val);
+
