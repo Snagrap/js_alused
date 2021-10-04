@@ -19,9 +19,6 @@ form.addEventListener("submit", addTask);
 //taskInput.addEventListener("input", runEvent);
 
 function addTask(e){
-	//body...
-
-	//
 	li.appendChild(document.createTextNode(taskInput.value));
 	const link=document.createElement("a");
 	link.className="secondary-content";
@@ -29,6 +26,5 @@ function addTask(e){
 	link.setAttribute("href", "#");
 	li.appendChild(link);
 	list.appendChild(li);
-	//console.log(li);
 	e.preventDefault();
 }
