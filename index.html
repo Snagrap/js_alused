@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device, initial-scale=1.0">
-		<title>JS ALUSED - DOM</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h1>Karl Karilaid</h1>
-					<h4>JS - ALUSED - DOM</h4>
-					<img src="me.gif">
-						<div class="card">
-        				<div class="card-content">
-          				<span class="card-title">TO-DO ADDER V3.2(still not working)</span>
-          				<div class="row">
-          					<form id="task-form" method="get">
-          						<div class="input-field col s12">
-          							<input id="task" type="text">
-          							<label for="task">New task to do</label>
-        						</div>
-        						<input type="submit" value="Add task" class="btn">
-          					</form>
-          				</div>
-        			</div>
-        		<div class="card-action">
-          		<h4 id="task-title">TO DO:</h4>
-    			<ul class="collection">
-    				<li></li>
-      				<li class="collection-item">Study JS
-      					<a href="#" class="secondary-content">X</a>
-      				</li>
-      				<li class="collection-item">Study HTML
-      					<a href="#" class="secondary-content">X</a>
-      				</li>
-      				<li class="collection-item">Go to take poopoo
-      					<a href="#" class="secondary-content">X</a>
-      				</li>
-    			</ul>
-        		</div>
-      			</div>
-				</div>
-			</div>
-		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		<script src="app.js"></script>
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device, initial-scale=1.0">
+        <title>JS ALUSED - DOM</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Karl Karilaid</h1>
+                    <h4>JS - ALUSED - DOM</h4>
+                        <div class="card">
+                        <div class="card-content">
+                        <span class="card-title">TO-DO Adder V4 (still not working)</span>
+                        <div class="row">
+                            <form id="task-form" method="get">
+                                <div class="input-field col s12">
+                                    <input id="task" type="text">
+                                    <label for="task">Add task</label>
+                                </div>
+                                <input type="submit" value="Add task" class="btn">
+                            </form>
+                        </div>
+                    </div>
+                <div class="card-action">
+                <h4 id="task-title">TO-DO:</h4>
+                <ul class="collection">
+                    <li></li>
+                    <li class="collection-item">Study JS
+                        <a href="#" class="secondary-content">X</a>
+                    </li>
+                    <li class="collection-item">Study HTML
+                        <a href="#" class="secondary-content">X</a>
+                    </li>
+                    <li class="collection-item">Sleep
+                        <a href="#" class="secondary-content">X</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn" id="delete-all">Delete all tasks</button>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="app.js"></script>
+    </body>
 </html>
